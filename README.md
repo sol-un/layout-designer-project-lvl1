@@ -1,2 +1,12 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/sol-un/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/sol-un/layout-designer-project-lvl1/actions)
+This project is a beginner layout study made under the guidance of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about).
+
+## Setup
+
+```sh
+$ make install
+```
+
+## Run lint
+
+```sh
+make lint
