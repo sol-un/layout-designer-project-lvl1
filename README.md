@@ -1,4 +1,4 @@
-This project is a beginner layout study made under the guidance of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about).
+This project is a beginner HTML/CSS study made under the guidance of Hexlet, a self-education platform. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about). It's also available online at special-valley.surge.sh
 
 ## Setup
 
