@@ -11,8 +11,15 @@
 }
 
 @font-face {
+  font-weight: 400;
   font-family: 'OpenSans Regular';
   src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'OpenSans Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
 }
 
 @font-face {
@@ -22,6 +29,7 @@
 
 body {
   color: var(--dark);
+  font-weight: 400;
   font-size: 16px;
   font-family: 'OpenSans Regular', sans-serif;
   line-height: 1.6em;
@@ -35,6 +43,8 @@ h3 {
 }
 
 h1 {
+  margin-bottom: 185px;
+
   font-size: 72px;
 }
 
@@ -52,22 +62,65 @@ h3 {
 }
 
 .flex-item {
+  position: relative;
+
   align-self: center;
   max-width: 1110px;
-  margin: 100px 0;
+
+  padding: 100px 0;
 }
 
-.flex-item::before {
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 
-  width: 100%;
+  width: 100vw;
   height: 100%;
 
   background-image: url("../assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.1;
 
   content: "";
+}
+
+.text-color-primary {
+  color: var(--primary);
+}
+
+.main-illustration {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  z-index: -1;
+}
+
+.columns-2 {
+  column-count: 2;
+}
+
+.columns-2 p {
+  margin-top: 0;
+}
+
+.break-after-paragraph {
+  break-after: column;
+}
+
+.nav-button {
+  display: inline-block;
+  margin: 40px 0;
+  padding: 12px 24px;
+
+  color: var(--white);
+  font-weight: 700;
+
+  background-color: var(--primary);
 }
