@@ -61,8 +61,10 @@ h3 {
   flex-direction: column;
 }
 
-.flex-container-nav {
+.flex-container-cards {
   display: flex;
+  justify-content: space-between;
+  margin-top: 125px;
 }
 
 .flex-item {
@@ -151,5 +153,5 @@ h3 {
 }
 
 .video-caption {
-  margin-bottom: 400px;
+  margin-bottom: 275px;
 }
