@@ -143,7 +143,7 @@ body {
 }
 
 .header-1 {
-  margin: 0 0 185px;
+  margin: 0 0 190px;
 
   font-size: 72px;
 }
@@ -246,7 +246,7 @@ body {
 
 .illustration-header {
   position: absolute;
-  top: -55px;
+  top: -50px;
   right: -270px;
   z-index: -1;
 
@@ -257,6 +257,10 @@ body {
 
 .illustration-section {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.illustration-section:nth-child(odd) {
+  margin-right: 30px;
 }
 
 .cards {
@@ -361,6 +365,10 @@ body {
 
 .mt-75 {
   margin-top: 75px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .nav-button:hover,
