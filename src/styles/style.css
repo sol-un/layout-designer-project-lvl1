@@ -309,15 +309,12 @@ body {
 }
 
 .form {
+  align-items: center;
   padding: 40px 55px;
 }
 
 .form-input-label {
   font-size: 18px;
-}
-
-.form-input-group {
-  display: flex;
 }
 
 .form-input-group > * {
@@ -327,12 +324,13 @@ body {
   outline: none;
 }
 
-.form-input-group > input {
+.form-input-field {
+  width: 100%;
   height: 50px;
   margin-top: 10px;
 }
 
-.form-input-group > button {
+.form-input-button {
   position: relative;
 
   width: 70px;
@@ -341,6 +339,11 @@ body {
   margin-left: 0;
 
   background-color: var(--primary);
+}
+
+.form-input-text {
+  color: var(--white);
+  font-size: 12px;
 }
 
 .form-input-group > button::before {
