@@ -64,6 +64,7 @@ body {
 .section-summary {
   font-size: 34px;
   font-family: 'Neucha Regular', sans-serif;
+  line-height: normal;
 }
 
 .background-solid-dark {
