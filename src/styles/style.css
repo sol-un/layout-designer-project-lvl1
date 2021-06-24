@@ -184,6 +184,7 @@ body {
 
   color: var(--white);
   font-weight: bold;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 
@@ -196,6 +197,7 @@ body {
 
   color: var(--brown);
   font-weight: bold;
+  font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 
@@ -274,7 +276,7 @@ body {
   display: flex;
 
   flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .card {
