@@ -355,15 +355,10 @@ a:active {
   background-color: var(--primary);
 }
 
-.form-input-text {
-  color: var(--white);
-  font-size: 12px;
-}
-
-.form-input-group > button::before {
+.form-input-button::before {
   position: absolute;
   top: 15px;
-  left: 20px;
+  left: 15px;
 
   width: 100%;
   height: 100%;
@@ -371,6 +366,11 @@ a:active {
   background: url('../assets/send.svg') no-repeat;
 
   content: "";
+}
+
+.form-input-text {
+  color: var(--white);
+  font-size: 12px;
 }
 
 .nav-button:hover,
