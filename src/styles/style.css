@@ -14,22 +14,23 @@
 @font-face {
   font-weight: 400;
   font-family: 'OpenSans Regular';
-  src: url('../fonts/OpenSans-Regular.ttf');
+  src: url('../fonts/OpenSans-Regular.woff2');
 }
 
 @font-face {
   font-weight: 700;
   font-family: 'OpenSans Bold';
-  src: url('../fonts/OpenSans-Bold.ttf');
+  src: url('../fonts/OpenSans-Bold.woff2');
 }
 
 @font-face {
   font-family: 'Neucha Regular';
-  src: url('../fonts/Neucha-Regular.ttf');
+  src: url('../fonts/Neucha-Regular.woff2');
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
 
   color: var(--dark);
   font-weight: 400;
@@ -227,15 +228,23 @@ a:active {
   break-after: column;
 }
 
+[class*="button"] {
+  box-sizing: border-box;
+  height: 50px;
+
+  background-color: var(--primary);
+}
+
+[class*="button"]:hover {
+  background-color: var(--primary-dark);
+}
+
 .nav-button {
-  display: inline-block;
-  margin: 25px 0 0;
   padding: 12px 24px;
 
   color: var(--white);
   font-weight: 700;
-
-  background-color: var(--primary);
+  text-transform: uppercase;
 }
 
 .text-align-center {
@@ -261,7 +270,6 @@ a:active {
   right: -270px;
   z-index: -1;
 
-  width: auto;
   height: 525px;
 }
 
@@ -277,15 +285,20 @@ a:active {
   display: flex;
 
   flex-wrap: wrap;
+  max-width: 1110px;
   padding-top: 60px;
+
+  color: var(--dark);
 }
 
 .card {
+  flex: 1 1 350px;
   box-sizing: border-box;
-  width: 350px;
-  height: 350px;
+
   margin: 10px 15px;
   padding: 24px;
+
+  color: var(--dark);
 
   background-color: var(--light);
 }
@@ -299,7 +312,8 @@ a:active {
 }
 
 .nav-link {
-  color: inherit;
+  display: inline-block;
+
   text-decoration: none;
 }
 
@@ -350,7 +364,6 @@ a:active {
   position: relative;
 
   width: 70px;
-  height: 50px;
 
   background-color: var(--primary);
 }
@@ -373,12 +386,8 @@ a:active {
   font-size: 12px;
 }
 
-.nav-button:hover,
-.form-input-group > button:hover {
-  background-color: var(--primary-dark);
-}
-
-[class$=card]:hover {
+[class="card nav-link"]:hover,
+[class$="card nav-link"]:hover [class^=header-] {
   color: var(--white);
 
   background-color: var(--primary);
@@ -422,11 +431,6 @@ a:active {
 
 .mb-380 {
   margin-bottom: 380px;
-}
-
-.px-0 {
-  padding-right: 0;
-  padding-left: 0;
 }
 
 .py-100 {
