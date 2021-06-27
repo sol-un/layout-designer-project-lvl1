@@ -43,10 +43,6 @@ a:active {
   color: var(--blue);
 }
 
-.position-relative {
-  position: relative;
-}
-
 .d-flex {
   display: flex;
 }
@@ -154,7 +150,7 @@ a:active {
   content: "";
 }
 
-[class^=header-] {
+[class^=h-] {
   margin: 0 0;
 
   font-weight: 400;
@@ -163,26 +159,29 @@ a:active {
   line-height: 1.2em;
 }
 
-.header-1 {
+.h-1 {
   font-size: 72px;
 }
 
-.header-2 {
+.h-2 {
   font-size: 60px;
 }
 
-.header-3 {
+.h-3 {
   font-size: 34px;
 }
 
-.header-muted {
-  color: var(--dark-translucent);
+[class^=tagline-] {
   font-size: 24px;
+  font-family: 'Neucha Regular', sans-serif;
 }
 
-.header-muted-dark {
+.tagline-light {
+  color: var(--dark-translucent);
+}
+
+.tagline-dark {
   color: var(--white-translucent);
-  font-size: 24px;
 }
 
 [class^=header-section-article-] {
@@ -220,7 +219,7 @@ a:active {
   column-gap: 30px;
 }
 
-.columns-2 p {
+.columns-2 .paragraph {
   margin-top: 0;
 }
 
@@ -312,8 +311,6 @@ a:active {
 }
 
 .nav-link {
-  display: inline-block;
-
   text-decoration: none;
 }
 
@@ -323,7 +320,7 @@ a:active {
   background-color: var(--dark-primary);
 }
 
-.card-title > .header-2 {
+.card-title > .h-2 {
   font-size: 52px;
 }
 
@@ -364,8 +361,6 @@ a:active {
   position: relative;
 
   width: 70px;
-
-  background-color: var(--primary);
 }
 
 .form-input-button::before {
@@ -382,12 +377,11 @@ a:active {
 }
 
 .form-input-text {
-  color: var(--white);
   font-size: 12px;
 }
 
 [class="card nav-link"]:hover,
-[class$="card nav-link"]:hover [class^=header-] {
+[class$="card nav-link"]:hover [class^=h-] {
   color: var(--white);
 
   background-color: var(--primary);
@@ -423,6 +417,10 @@ a:active {
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
 }
 
 .mb-200 {
