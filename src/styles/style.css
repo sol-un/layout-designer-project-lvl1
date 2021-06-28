@@ -30,7 +30,6 @@
 
 body {
   margin: 0;
-  overflow-x: hidden;
 
   color: var(--dark);
   font-weight: 400;
@@ -47,6 +46,10 @@ a:active {
   display: flex;
 }
 
+.d-block {
+  display: block;
+}
+
 .flex-column {
   flex-direction: column;
 }
@@ -56,9 +59,15 @@ a:active {
   flex-grow: 1;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .section {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
   width: 1110px;
   margin: 0 auto;
 }
@@ -253,16 +262,11 @@ a:active {
 .video {
   position: absolute;
 
+  align-self: center;
+  margin-top: 250px;
   border: 0;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
-.video-container {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
 }
 
 .illustration-header {
@@ -287,9 +291,7 @@ a:active {
 
   flex-wrap: wrap;
   max-width: 1110px;
-  padding-top: 60px;
-
-  color: var(--dark);
+  padding-top: 90px;
 }
 
 .card {
@@ -319,6 +321,8 @@ a:active {
 .card-title {
   padding: 0;
 
+  color: var(--white);
+
   background-color: var(--dark-primary);
 }
 
@@ -327,7 +331,6 @@ a:active {
 }
 
 .card-number {
-  display: block;
   margin-bottom: 40px;
 
   font-size: 64px;
@@ -417,10 +420,6 @@ a:active {
   margin-bottom: 20px;
 }
 
-.mb-30 {
-  margin-bottom: 30px;
-}
-
 .mb-50 {
   margin-bottom: 50px;
 }
@@ -429,8 +428,8 @@ a:active {
   margin-bottom: 200px;
 }
 
-.mb-380 {
-  margin-bottom: 380px;
+.mb-410 {
+  margin-bottom: 410px;
 }
 
 .py-100 {
