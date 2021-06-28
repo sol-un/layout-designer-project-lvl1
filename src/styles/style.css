@@ -382,6 +382,8 @@ a:active {
 }
 
 .form-input-text {
+  margin: 0;
+
   font-size: 12px;
 }
 
@@ -428,8 +430,8 @@ a:active {
   margin-bottom: 200px;
 }
 
-.mb-410 {
-  margin-bottom: 410px;
+.mb-400 {
+  margin-bottom: 400px;
 }
 
 .py-100 {
