@@ -69,8 +69,10 @@ a:active {
   display: flex;
 
   flex-direction: column;
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section-summary {
@@ -276,7 +278,7 @@ a:active {
 .card {
   flex: 1 1 350px;
   box-sizing: border-box;
-
+  max-height: 350px;
   margin: 10px 15px;
   padding: 24px;
 
@@ -331,13 +333,10 @@ a:active {
 .form-input-group > * {
   padding: 0;
   border: none;
-
-  outline: none;
 }
 
 .form-input-field {
   width: 100%;
-  height: 20px;
   padding: 15px;
 
   font-size: 13px;
@@ -386,9 +385,4 @@ a:active {
 .my-30 {
   margin-top: 30px;
   margin-bottom: 30px;
-}
-
-.py-100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
