@@ -21,8 +21,8 @@
         </span>
         в программировании
       </h1>
-      <div class="d-flex">
-        <div class="flex-item-equal-width mr-30">
+      <div class="d-flex text-columns">
+        <div class="flex-item-equal-width">
           <p>
             Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто
             игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые существенны. Иногда с ними
@@ -283,23 +283,25 @@
 
   <footer class="background-solid-white">
     <div class="section">
-      <form class="form d-flex background-solid-dark">
-        <h2 class="h-3 flex-item-equal-width text-color-white">
+      <div class="email-form d-flex background-solid-dark">
+        <h2 class="h-3 text-color-white">
           Хотите узнать больше?
           <br>
           Подпишитесь на обновления
         </h2>
-        <div class="d-flex flex-column flex-item-equal-width">
-          <label class="form-input-label text-color-white" for="email">
-            Электронная почта
-          </label>
-          <div class="d-flex form-input-group">
-            <input id="email" class="form-input-field" type="text" placeholder="Ваша электронная почта">
-            <button class="form-input-button"></button>
-          </div>
-          <p class="form-input-text text-color-white">Подписываясь, вы принимаете правила сервиса</p>
+        <div class="d-flex flex-column">
+          <form>
+            <label class="form-input-label text-color-white" for="email">
+              Электронная почта
+            </label>
+            <div class="d-flex form-input-group">
+              <input id="email" class="form-input-field" type="text" placeholder="Ваша электронная почта">
+              <button class="form-input-button"></button>
+            </div>
+            <p class="form-input-text text-color-white">Подписываясь, вы принимаете правила сервиса</p>
+          </form>
         </div>
-      </form>
+      </div>
       <div class="mt-65 text-align-center">
         <p>
           © 2020 Константин Константинопольский

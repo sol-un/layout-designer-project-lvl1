@@ -66,9 +66,8 @@ a:active {
 .section {
   position: relative;
 
-  display: flex;
+  display: block;
 
-  flex-direction: column;
   max-width: 1110px;
   margin: 0 auto;
   padding-top: 100px;
@@ -87,18 +86,12 @@ a:active {
   background-color: var(--dark-primary);
 }
 
-.background-solid-white {
-  background-color: var(--white);
-}
-
 [class^=background-pattern-] {
   position: relative;
 }
 
 [class^=background-pattern-]::before {
   position: absolute;
-  top: 0;
-  left: 0;
 
   z-index: -1;
 
@@ -116,7 +109,6 @@ a:active {
 [class^=background-pattern-]::after {
   position: absolute;
   top: 0;
-  left: 0;
 
   z-index: -2;
 
@@ -173,14 +165,11 @@ a:active {
 }
 
 [class^=header-section-article-] {
-  display: block;
   margin-top: 100px;
   margin-bottom: 0;
   padding: 5px 10px;
 
-  font-weight: bold;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
 
@@ -204,18 +193,11 @@ a:active {
   color: var(--white);
 }
 
-.columns-2 {
-  display: flex;
-}
-
-.break-after-paragraph {
-  break-after: column;
+.text-columns {
+  grid-column-gap: 30px;
 }
 
 [class*="button"] {
-  box-sizing: border-box;
-  height: 50px;
-
   background-color: var(--primary);
 }
 
@@ -225,6 +207,7 @@ a:active {
 
 .nav-button {
   display: inline-block;
+  height: 25px;
   margin-top: 40px;
   padding: 12px 24px;
 
@@ -263,6 +246,10 @@ a:active {
 
 .illustration-section:nth-child(odd) {
   margin-right: 30px;
+}
+
+.illustration-section:nth-child(even) {
+  margin-left: 30px;
 }
 
 .cards {
@@ -317,8 +304,9 @@ a:active {
   line-height: 1;
 }
 
-.form {
+.email-form {
   align-items: center;
+  justify-content: space-between;
   padding: 40px 55px;
 }
 
@@ -329,12 +317,13 @@ a:active {
 }
 
 .form-input-group > * {
+  box-sizing: border-box;
   padding: 0;
   border: none;
 }
 
 .form-input-field {
-  width: 100%;
+  width: 415px;
   padding: 15px;
 
   font-size: 13px;
@@ -348,11 +337,11 @@ a:active {
 
 .form-input-button::before {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 13px;
+  left: 23px;
 
-  width: 100%;
-  height: 100%;
+  width: 24px;
+  height: 24px;
 
   background: url('../assets/send.svg') no-repeat;
 
