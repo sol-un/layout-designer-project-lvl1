@@ -216,8 +216,10 @@ a:active {
   text-transform: uppercase;
 }
 
-.align-self-center {
-  align-self: center;
+.align-items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text-align-center {
@@ -257,7 +259,7 @@ a:active {
 
   flex-wrap: wrap;
   max-width: 1110px;
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 .card {
