@@ -54,8 +54,7 @@ body {
 }
 
 .flex-item-equal-width {
-  flex-basis: 0;
-  flex-grow: 1;
+  flex: 1 0;
 }
 
 .align-items-center {
@@ -76,8 +75,6 @@ body {
 }
 
 .section-summary {
-  margin-top: 30px;
-
   font-size: 34px;
   font-family: 'Neucha Regular', sans-serif;
   line-height: 1.2;
@@ -85,6 +82,18 @@ body {
 
 .background-solid-dark {
   background-color: var(--dark-primary);
+}
+
+.background-solid-light {
+  background-color: var(--light);
+}
+
+.background-solid-white {
+  background-color: var(--white);
+}
+
+.background-solid-brown {
+  background-color: var(--brown);
 }
 
 [class^=background-pattern-] {
@@ -130,8 +139,6 @@ body {
 }
 
 [class^=h-] {
-  margin: 0;
-
   font-weight: 400;
 
   font-family: 'Neucha Regular', sans-serif;
@@ -139,8 +146,6 @@ body {
 }
 
 .h-1 {
-  margin-bottom: 185px;
-
   font-size: 72px;
 }
 
@@ -152,46 +157,23 @@ body {
   font-size: 34px;
 }
 
-[class^=tagline-] {
+.tagline {
   font-size: 24px;
   font-family: 'Neucha Regular', sans-serif;
+  line-height: 1.2em;
 }
 
-.tagline-light {
-  color: var(--dark-translucent);
-}
-
-.tagline-dark {
-  color: var(--white-translucent);
-}
-
-[class^=header-section-article-] {
+.header-section-article {
   margin-top: 100px;
   margin-bottom: 0;
   padding: 5px 10px;
-
-  font-size: 14px;
-  text-transform: uppercase;
 }
 
-.header-section-article-dark {
-  color: var(--white);
-
-  background-color: var(--brown);
-}
-
-.header-section-article-light {
-  color: var(--brown);
-
-  background-color: var(--white);
-}
-
-.credits {
+.text-color-true-black {
   color: var(--true-black);
-  font-size: 14px;
 }
 
-.credits-link {
+.text-color-blue {
   color: var(--blue);
 }
 
@@ -201,6 +183,26 @@ body {
 
 .text-color-white {
   color: var(--white);
+}
+
+.text-color-white-translucent {
+  color: var(--white-translucent);
+}
+
+.text-color-brown {
+  color: var(--brown);
+}
+
+.text-color-dark {
+  color: var(--dark);
+}
+
+.text-color-dark-primary {
+  color: var(--dark-primary);
+}
+
+.text-color-dark-translucent {
+  color: var(--dark-translucent);
 }
 
 .text-color-bootstrap-dark {
@@ -213,6 +215,34 @@ body {
 
 .text-align-center {
   text-align: center;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.font-family-header {
+  font-family: 'Neucha Regular', sans-serif;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-52 {
+  font-size: 52px;
 }
 
 [class*="button"] {
@@ -228,10 +258,6 @@ body {
   height: 25px;
   margin-top: 40px;
   padding: 12px 24px;
-
-  color: var(--white);
-  font-weight: 700;
-  text-transform: uppercase;
 }
 
 .video {
@@ -276,10 +302,6 @@ body {
   max-height: 350px;
   margin: 10px 15px;
   padding: 24px;
-
-  color: var(--dark);
-
-  background-color: var(--light);
 }
 
 .card:nth-child(3n + 1) {
@@ -294,24 +316,10 @@ body {
   text-decoration: none;
 }
 
-.card-title {
-  padding: 0;
-
-  color: var(--white);
-
-  background-color: var(--dark-primary);
-}
-
-.card-title > .h-2 {
-  font-size: 52px;
-}
-
 .card-number {
   margin-bottom: 40px;
 
-  color: var(--dark-primary);
   font-size: 64px;
-  font-family: 'Neucha Regular', sans-serif;
   line-height: 1;
 }
 
@@ -319,12 +327,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 40px 55px;
-}
-
-.form-input-label {
-  margin-bottom: 10px;
-
-  font-size: 18px;
 }
 
 .form-input-group > * {
@@ -342,6 +344,8 @@ body {
 
 .form-input-field::placeholder {
   color: var(--gray);
+
+  opacity: 0.2;
 }
 
 .form-input-button {
@@ -363,17 +367,27 @@ body {
   content: "";
 }
 
-.form-input-text {
-  margin: 0;
-
-  font-size: 12px;
-}
-
 [class="card nav-link"]:hover,
 [class="card nav-link"]:hover > * {
   color: var(--white);
 
   background-color: var(--primary);
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .mt-65 {
@@ -384,11 +398,19 @@ body {
   margin-bottom: 0;
 }
 
-.mr-30 {
-  margin-right: 30px;
+.mb-10 {
+  margin-bottom: 10;
+}
+
+.mb-185 {
+  margin-bottom: 185px;
 }
 
 .my-30 {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
 }
