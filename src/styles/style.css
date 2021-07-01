@@ -1,4 +1,7 @@
 :root {
+  --true-black: #000;
+  --gray: #757575;
+  --bootstrap-dark: #212529;
   --white: #fff;
   --white-translucent: #d7ccc0;
   --light: #f5f4f0;
@@ -38,10 +41,6 @@ body {
   line-height: 1.6em;
 }
 
-a:active {
-  color: var(--blue);
-}
-
 .d-flex {
   display: flex;
 }
@@ -59,14 +58,16 @@ a:active {
   flex-grow: 1;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
 
 .section {
   position: relative;
-
-  display: block;
 
   max-width: 1110px;
   margin: 0 auto;
@@ -185,6 +186,15 @@ a:active {
   background-color: var(--white);
 }
 
+.credits {
+  color: var(--true-black);
+  font-size: 14px;
+}
+
+.credits-link {
+  color: var(--blue);
+}
+
 .text-color-primary {
   color: var(--primary);
 }
@@ -193,8 +203,16 @@ a:active {
   color: var(--white);
 }
 
+.text-color-bootstrap-dark {
+  color: var(--bootstrap-dark);
+}
+
 .text-columns {
   grid-column-gap: 30px;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 [class*="button"] {
@@ -214,16 +232,6 @@ a:active {
   color: var(--white);
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.align-items-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text-align-center {
-  text-align: center;
 }
 
 .video {
@@ -301,6 +309,7 @@ a:active {
 .card-number {
   margin-bottom: 40px;
 
+  color: var(--dark-primary);
   font-size: 64px;
   font-family: 'Neucha Regular', sans-serif;
   line-height: 1;
@@ -331,6 +340,10 @@ a:active {
   font-size: 13px;
 }
 
+.form-input-field::placeholder {
+  color: var(--gray);
+}
+
 .form-input-button {
   position: relative;
 
@@ -357,7 +370,7 @@ a:active {
 }
 
 [class="card nav-link"]:hover,
-[class$="card nav-link"]:hover [class^=h-] {
+[class="card nav-link"]:hover > * {
   color: var(--white);
 
   background-color: var(--primary);
