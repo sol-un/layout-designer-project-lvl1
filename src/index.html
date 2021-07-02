@@ -40,10 +40,9 @@
             Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл,
             а
             остатки нейтрализовать.
-            <br>
-            <a class="nav-button nav-link text-color-white text-transform-uppercase font-weight-bold"
-              href=" #navigation">Подробнее</a>
           </p>
+          <a class="nav-button nav-link text-color-white text-transform-uppercase font-weight-bold"
+            href=" #navigation">Подробнее</a>
         </div>
       </div>
     </div>
@@ -51,25 +50,25 @@
 
   <main>
     <section>
-      <div class="section d-flex flex-column align-items-center">
+      <div class="section">
         <h2 class="h-2 m-0 text-align-center">
           Что же это такое,<br>
           <span class="text-color-primary">
             когнитивные искажения?
           </span>
         </h2>
-        <p class="my-30 text-color-bootstrap-dark">
+        <div class="my-30 text-align-center text-color-bootstrap-dark">
           Что такое когнитивные искажения. Petrovna Channel
-        </p>
-        <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss"
+        </div>
+        <iframe class="video d-block mx-auto" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss"
           allowfullscreen></iframe>
       </div>
     </section>
     <nav id="navigation" class="background-solid-dark">
       <div class="section">
         <div class="cards">
-          <div class="card font-size-52 text-color-white background-solid-dark p-0">
-            <h2 class="h-2 m-0">
+          <div class="card text-color-white background-solid-dark p-0">
+            <h2 class="h-2 font-size-52 m-0">
               <span class="text-color-primary d-block">
                 5 когнитивных искажений,
               </span>
@@ -135,8 +134,8 @@
         <h3
           class="header-section-article background-solid-brown text-color-white font-size-14 text-transform-uppercase">
           Как проявляется</h3>
-        <div class="d-flex">
-          <div class="flex-item-equal-width mr-30">
+        <div class="d-flex text-columns">
+          <div class="flex-item-equal-width">
             <p>
               Когнитивное искажение называется так из-за того, что потребители зачастую предпочитают покупать товары,
               которые они могут собрать сами, а не уже собранные кем-то.
@@ -171,8 +170,8 @@
         <h3
           class="header-section-article background-solid-white text-color-brown font-size-14 text-transform-uppercase">
           Как проявляется</h3>
-        <div class="d-flex text-color-white">
-          <div class="flex-item-equal-width mr-30">
+        <div class="d-flex text-color-white text-columns">
+          <div class="flex-item-equal-width">
             <p>
               Если вы добавите аэродинамический спойлер к своему старому автомобилю вместо ремонта мотора, то
               автомобиль
@@ -204,8 +203,8 @@
         <h3
           class="header-section-article background-solid-brown text-color-white font-size-14 text-transform-uppercase">
           Как проявляется</h3>
-        <div class="d-flex">
-          <div class="flex-item-equal-width mr-30">
+        <div class="d-flex text-columns">
+          <div class="flex-item-equal-width">
             <p>
               Часто это искажение настигает нас, когда нужно решение проблемы и… о! Мы как раз только что решили
               подобную проблему! Давайте использовать это же решение, потому что оно сработало, и мы помним как!
@@ -239,8 +238,8 @@
         <h3
           class="header-section-article background-solid-white text-color-brown font-size-14 text-transform-uppercase">
           Как проявляется</h3>
-        <div class=" d-flex text-color-white">
-          <div class="flex-item-equal-width mr-30">
+        <div class=" d-flex text-color-white text-columns">
+          <div class="flex-item-equal-width">
             <p>
               Вы когда-нибудь откладывали написание теста? Ловили себя на использовании клавиш-стрелок в Vim?
               Поздравляю, у вас наблюдается гиперболическое обесценивание.
@@ -271,8 +270,8 @@
         <h3
           class="header-section-article background-solid-brown text-color-white font-size-14 text-transform-uppercase">
           Как проявляется</h3>
-        <div class="d-flex">
-          <div class="flex-item-equal-width mr-30">
+        <div class="d-flex text-columns">
+          <div class="flex-item-equal-width">
             <p>
               Одно из искажений, которое должно признать большинство из нас. И менеджеры проекта, и сами пользователи
               продукта — все склонны ставить сроки, в которые невозможно закончить запланированное.
@@ -300,19 +299,17 @@
           <br>
           Подпишитесь на обновления
         </h2>
-        <div class="d-flex flex-column">
-          <form>
-            <label class="text-color-white font-size-18 mb-10" for="email">
-              Электронная почта
-            </label>
-            <div class="d-flex form-input-group">
-              <input id="email" class="form-input-field" type="text" placeholder="Ваша электронная почта">
-              <button class="form-input-button"></button>
-            </div>
-            <p class="text-color-white font-size-12 m-0">Подписываясь, вы принимаете <a class="text-color-white"
-                href="#">правила сервиса</a></p>
-          </form>
-        </div>
+        <form>
+          <label class="text-color-white font-size-18 " for="email">
+            Электронная почта
+          </label>
+          <div class="d-flex form-input-group mt-10">
+            <input id="email" class="form-input-field" type="text" placeholder="Ваша электронная почта">
+            <button class="form-input-button"></button>
+          </div>
+          <p class="text-color-white font-size-12 m-0">Подписываясь, вы принимаете <a class="text-color-white"
+              href="#">правила сервиса</a></p>
+        </form>
       </div>
       <div class="mt-65 text-align-center text-color-true-black font-size-14">
         <p>
